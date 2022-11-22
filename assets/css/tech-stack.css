@@ -1,0 +1,55 @@
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.software-skill-inline>p {
+  color: #345676;
+  font-size: 12px;
+}
+
+.nodejs {
+  color: #539e43;
+}
+
+.javascript {
+  color: #dab92d;
+}
+
+.docker {
+  color: #2497ed;
+}
+
+.npm {
+  color: #cb3838;
+}
+
+.python {
+  color: #356f9f;
+}
+
+.mysql {
+  color: #00688f;
+}
+
+.firebase {
+  color: #ffa50f;
+}
+
+.reactjs {
+  color: #61dafb;
+}
+
+.aws {
+  color: #04273a;
+}
