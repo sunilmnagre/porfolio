@@ -1,5 +1,6 @@
 .social-media-div {
   font-size: 2em;
+  margin: 20px 0 0 50px;
 }
 
 .icon-button {
@@ -62,5 +63,6 @@
 @media (max-width: 768px) {
   .social-media-div {
     text-align: center;
+    margin: 20px 0 0 0px;
   }
 }
