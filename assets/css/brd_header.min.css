@@ -95,11 +95,10 @@ a[href]:focus .page_header_logo_svg {
 
 @media (min-width:768px) {
     .page_header_nav_container {
-        margin: 0 auto;
         height: 70px;
         visibility: visible;
         opacity: 1;
-        width: auto
+        width: 375px;
     }
 }
 
@@ -418,11 +417,11 @@ a[href]:focus .page_header_logo_svg {
 
 .page_header .btn_hamburger_container {
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 35px;
+    right: 5px;
     left: auto;
-    width: 40px !important;
-    height: 70px;
+    width: 190px !important;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center
@@ -711,7 +710,7 @@ html.main_menu_open {
 
 .header_main_menu {
     list-style: none;
-    margin: 0
+    margin: 0 50px;
 }
 
 .header_main_menu .menu,

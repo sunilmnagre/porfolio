@@ -333,3 +333,58 @@ hr{
     -moz-box-shadow: 10px 10px 5px #ccc !important;
     -webkit-box-shadow: 10px 10px 5px #ccc !important;
 }
+
+.designation {
+    margin-top: 15px;
+    display: flex;
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: #181d1d;
+    animation: typing 1.7s steps(20, end) forwards;
+    width: 0;
+    display: block;
+}
+
+
+.designationFinished {
+    display: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.downloadCV{
+    padding: 6px !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    border-radius: 20px !important;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .typed-out {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0.7rem;
+        color: #181d1d;
+        animation: typing 1.7s steps(20, end) forwards;
+        width: 0;
+        display: block;
+    }
+    .designation {
+        margin-top: 8px;
+        display: flex;
+        display: inline-block;
+    }
+}

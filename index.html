@@ -24,13 +24,16 @@
                <a href="#"><span class="firstname-title">Sunil</span> <span class="lastname-title">Nagre</span></a>
             </div>
             <div class="btn_hamburger_container">
+            <div class="designation">
+               <div id="deskDesg" class="typed-out">Senior Software Engineer</div>
+            </div>
             </div>
             <nav id="main_menu" class="page_header_nav_container">
                <div class="header_main_menu">
                   <div class="menu-header_main-container">
-                     <ul id="menu-menu-header_main" class="menu">
-                        
-                     </ul>
+                     <div class="designation">
+                        <div id="deskDesg" class="typed-out">Senior Software Engineer</div>
+                     </div>
                   </div>
                </div>
             </nav>
@@ -97,6 +100,7 @@
                                                 rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i><span></span></a>
                                              <a href="https://stackoverflow.com/users/2739512/sunil-nagre" class="icon-button stack-overflow" target="_blank"
                                                 rel="noopener noreferrer"><i class="fab fa-stack-overflow" aria-hidden="true"></i><span></span></a>
+                                                <a class="btn btn-primary downloadCV" href="https://drive.google.com/file/d/1fu6qS8ygx6XC7e6fAIV7RtwzGOuNYjOO/view?usp=sharing" target="_blank" role="button">Download CV</a>
                                           </div>
                                        </div>
                                     </div>
@@ -1066,6 +1070,42 @@
       <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="./assets/js/slider.js"></script>
       <script type="text/javascript" src="./assets/js/ScrollMagic.min.js"></script>
+      <script>
+          function getDevice() {
+            if (navigator.userAgent.match(/Android/i)
+               || navigator.userAgent.match(/webOS/i)
+               || navigator.userAgent.match(/iPhone/i)
+               || navigator.userAgent.match(/iPad/i)
+               || navigator.userAgent.match(/iPod/i)
+               || navigator.userAgent.match(/BlackBerry/i)
+               || navigator.userAgent.match(/Windows Phone/i)) {
+               return 2;
+            } else {
+               return 3;
+            }
+         }
+         
+         const element = document.getElementById("deskDesg");
+         let counter = 1;
+         let counterEnd = getDevice();
+         const destinations = ['Senior Software Engineer', 'Technical Lead', 'Mentor', 'Senior Software Engineer | Technical Lead | Mentor'];
+         setInterval(() => { 
+            if (element.getAttribute("class") == "typed-out"){
+               element.setAttribute("class", "designationFinished");
+               setTimeout(() => {
+                  element.innerHTML = "";
+                  element.innerHTML = destinations[counter];
+                  element.setAttribute("class", "typed-out");
+                  counter++;
+               }, 100);
+            }else{
+                element.setAttribute("class", "typed-out");
+            }
+            if (counter == counterEnd){
+               counter = 0;
+            }
+         }, 3000);
+      </script>
    </body>
 </html>
 
